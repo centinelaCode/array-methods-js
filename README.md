@@ -1,11 +1,17 @@
 # Manipulando Arrays en JavaScript
 
-## foreach
+## 1. foreach
 Ciclo especializado en hacer un recorrido por elemenos de una array.
 
 **Sintaxis**
 ~~~
-  arr.forEach(function callback(currentValue, index, array) {
+  // Use function
+  arr.forEach(function callback(currentValue, index?, array?) {
+    // tu iterador
+  }[, thisArg]);
+
+  // Use arrow function
+  arr.forEach((currentValue, index?, array?) => {
     // tu iterador
   }[, thisArg]);
 ~~~
