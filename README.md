@@ -62,6 +62,7 @@ Es un array method que permite transformar el array creando un nuevo array, es d
   {customerName: 'Zulema', total: 120, delivered: false},
   {customerName: 'Santiago', total: 180, delivered: true},
   {customerName: 'Valentina', total: 240, delivered: true}];
+  
   const newArrayOrders = orders.map(item => {  
   return  {
     ...item,
@@ -70,3 +71,29 @@ Es un array method que permite transformar el array creando un nuevo array, es d
 })
 ~~~
 
+
+## 3. filter()
+Es un array method que permite como su nombre lo dice 'filtrar' los elementos en un nuevo array sin mutar el array original.
+
+**Sintaxis**
+~~~
+  javascript  
+  const newArray = arr.filter(callback(currentValue[, index[, array]])[, thisArg])
+~~~
+
+**Example**
+~~~
+  const words = ['spray', 'limit', 'elite', 'exuberant']
+  const newArray2 = words.filter(item => item.length >= 6)
+~~~
+
+**Example con array de objetos**
+~~~
+  const orders = [
+  {customerName: 'Juan', total: 60, delivered: true},
+  {customerName: 'Zulema', total: 120, delivered: false},
+  {customerName: 'Santiago', total: 180, delivered: true},
+  {customerName: 'Valentina', total: 240, delivered: true}];
+
+  const newArrayOrders = orders.filter(order => order.delivered && order.total >= 100)
+~~~
