@@ -97,3 +97,8 @@ Es un array method que permite como su nombre lo dice 'filtrar' los elementos en
 
   const newArrayOrders = orders.filter(order => order.delivered && order.total >= 100)
 ~~~
+
+
+## 4. reduce()
+Es un array method que permite reducir los valores de un array a un solo valor, es decir no retorna otro array como los otros array methods (al menos que sea loq ue deseamos hacer). Su principal función es hacer calculos con los elementos del array.
+
