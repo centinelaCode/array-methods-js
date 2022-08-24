@@ -32,7 +32,7 @@ Ciclo especializado en hacer un recorrido por elemenos de una array.
 Es un array method que permite transformar el array creando un nuevo array, es decir no muta el array original.
 
 **Sintaxis**
-~~~
+~~~ javascript
   javascript
   // Use function
   const nuevo_array = arr.map(function callback(currentValue, index, array) {
@@ -46,7 +46,7 @@ Es un array method que permite transformar el array creando un nuevo array, es d
 ~~~
 
 **Example**
-~~~
+~~~ javascript
   const letters = ['a', 'b', 'c']
   newArray =  letters.map( item => item + '++')
   
@@ -76,19 +76,18 @@ Es un array method que permite transformar el array creando un nuevo array, es d
 Es un array method que permite como su nombre lo dice 'filtrar' los elementos en un nuevo array sin mutar el array original.
 
 **Sintaxis**
-~~~
-  javascript  
+~~~javascript  
   const newArray = arr.filter(callback(currentValue[, index[, array]])[, thisArg])
 ~~~
 
 **Example**
-~~~
+~~~ javascript
   const words = ['spray', 'limit', 'elite', 'exuberant']
   const newArray2 = words.filter(item => item.length >= 6)
 ~~~
 
 **Example con array de objetos**
-~~~
+~~~ javascript
   const orders = [
   {customerName: 'Juan', total: 60, delivered: true},
   {customerName: 'Zulema', total: 120, delivered: false},
@@ -102,3 +101,14 @@ Es un array method que permite como su nombre lo dice 'filtrar' los elementos en
 ## 4. reduce()
 Es un array method que permite reducir los valores de un array a un solo valor, es decir no retorna otro array como los otros array methods (al menos que sea loq ue deseamos hacer). Su principal función es hacer calculos con los elementos del array.
 
+**Sintaxis**
+~~~javascript  
+  arr.reduce(callback(acumulador, valorActual[, índice[, array]])[, valorInicial])
+~~~
+
+**Example**
+~~~ javascript
+  const totals = [1, 2, 3, 4];
+  // devuelve la suma de los elementos del array
+  const rta = totals.reduce((sum, element) => sum + element, 10)
+~~~
