@@ -112,3 +112,13 @@ Es un array method que permite reducir los valores de un array a un solo valor, 
   // devuelve la suma de los elementos del array
   const rta = totals.reduce((sum, element) => sum + element, 10)
 ~~~
+
+
+
+## 4. some()
+Es un array method que permite idetificar si alguno cumple con una condicion y retorna una true o false, es decir si alguno que cumple la condicion retorna true, pero si no hay ninguno retorna false.
+
+**Sintaxis**
+~~~javascript  
+  arr.some(callback(element[, index[, array]])[, thisArg])
+~~~
