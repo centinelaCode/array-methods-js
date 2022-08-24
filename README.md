@@ -122,3 +122,29 @@ Es un array method que permite idetificar si alguno cumple con una condicion y r
 ~~~javascript  
   arr.some(callback(element[, index[, array]])[, thisArg])
 ~~~
+
+**Example**
+~~~ javascript
+  const numbers = [1, 2, 3, 4];
+
+  // existe al menos un numeor par
+  const rta = numbers.some( item => item % 2 === 0);
+~~~
+
+
+
+## 4. every()
+Es un array method que permite idetificar si todos cumple con una condicion y retorna true o false, es decir si alguno que no cumple la condicion retorna false, pero si todos cumplen la condición retorna true.
+
+**Sintaxis**
+~~~javascript  
+  arr.every(callback(element[, index[, array]])[, thisArg])
+~~~
+
+**Example**
+~~~ javascript
+  const numbers = [1, 2, 3, 4];
+  
+  // existe al menos un numeor par
+  const rta = numbers.every( item => item % 2 === 0);
+~~~
